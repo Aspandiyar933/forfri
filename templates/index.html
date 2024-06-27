@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Llama 3 8B Demo</title>
+</head>
+<body>
+    <h1>Ollama Llama 3 8B Demo</h1>
+    <form method="POST">
+        <textarea name="user_input" rows="4" cols="50" placeholder="Enter your prompt here"></textarea>
+        <br>
+        <input type="submit" value="Get Response">
+    </form>
+    {% if response %}
+    <h2>LLM Response:</h2>
+    <pre>{{ response }}</pre>
+    {% endif %}
+</body>
+</html>
